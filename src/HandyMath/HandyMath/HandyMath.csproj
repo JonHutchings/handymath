@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>jon.hutchings@derivco.co.za</Authors>
+    <Company>Derivco</Company>
+    <Description>A simple math library for experimenting with Azure Pipelines.</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Source\GitHub\handymath\src\HandyMath\HandyMath\HandyMath.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HandyMath</name>
+    </assembly>
+    <members>
+        <member name="T:HandyMath.Basic">
+            <summary>
+            Basic operations one might do on simple numeric types like integers.
+            </summary>
+        </member>
+        <member name="M:HandyMath.Basic.Add(System.Int64,System.Int64)">
+            <summary>
+            Add the supplied numbers.
+            </summary>
+            <param name="left">The left argument.</param>
+            <param name="right">The right argument.</param>
+            <returns>The sum of the supplied numbers.</returns>
+        </member>
+    </members>
+</doc>
