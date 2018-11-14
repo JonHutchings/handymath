@@ -29,9 +29,9 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'push'
-    nuGetFeedType: external
-    packagesToPush: '$(build.artifactStagingDirectory)/*.nupkg'
-    publishFeedCredentials: NuGet.org
+# - task: DotNetCoreCLI@2
+  # inputs:
+    # command: 'push'
+    # nuGetFeedType: external
+    # packagesToPush: '$(build.artifactStagingDirectory)/*.nupkg'
+    # publishFeedCredentials: NuGet.org
