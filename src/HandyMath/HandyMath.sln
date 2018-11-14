@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyMath", "HandyMath\HandyMath.csproj", "{5EA5C69E-8752-4007-A4F0-2E40739CC2B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyMath.Tests", "HandyMath.Tests\HandyMath.Tests.csproj", "{288A5D48-3983-4123-B8F6-400808FFA055}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EA5C69E-8752-4007-A4F0-2E40739CC2B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EA5C69E-8752-4007-A4F0-2E40739CC2B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EA5C69E-8752-4007-A4F0-2E40739CC2B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EA5C69E-8752-4007-A4F0-2E40739CC2B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{288A5D48-3983-4123-B8F6-400808FFA055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{288A5D48-3983-4123-B8F6-400808FFA055}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{288A5D48-3983-4123-B8F6-400808FFA055}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{288A5D48-3983-4123-B8F6-400808FFA055}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F584C3E-3499-444E-B02A-C5CB0BF8BD2E}
+	EndGlobalSection
+EndGlobal
