@@ -6,6 +6,7 @@
     <Authors>jon.hutchings@derivco.co.za</Authors>
     <Company>Derivco</Company>
     <Description>A simple math library for experimenting with Azure Pipelines.</Description>
+    <Version>2.0.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
