@@ -59,7 +59,7 @@ steps:
   inputs:
     command: 'push'
     nuGetFeedType: 'external'
-    packagesToPush: '*.nupkg'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
     publishFeedCredentials: 'NuGet.Org'
     
     
