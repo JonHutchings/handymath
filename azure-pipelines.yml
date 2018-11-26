@@ -49,6 +49,10 @@ steps:
     minorVersion: '0'
     patchVersion: '4'
 
+- task: BatchScript@1
+  inputs:
+    filename: 'test.bat'
+
 # .NET Core
 # Push NuGet packages.
 - task: DotNetCoreCLI@2
