@@ -44,9 +44,9 @@ steps:
     #minorVersion: '0' # Required when versioningScheme == byPrereleaseNumber
     #patchVersion: '0' # Required when versioningScheme == byPrereleaseNumber
 
-    versioningScheme: 'byPrereleaseNumber'
-    majorVersion: '3'
-    minorVersion: '1'
+    versioningScheme: 'byBuildNumber'
+    majorVersion: '0'
+    minorVersion: '0'
     patchVersion: '1'
     
 # - task: DotNetCoreCLI@2
