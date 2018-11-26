@@ -35,6 +35,19 @@ steps:
   inputs:
     command: 'pack'
     configuration: 'release'
+    packagesToPack: '**/*.csproj'
+    #packDirectory: '$(build.artifactStagingDirectory)' # Optional
+    #nobuild: false # Optional
+    #versioningScheme: 'off' # Options: off, byPrereleaseNumber, byEnvVar, byBuildNumber
+    #versionEnvVar: # Required when versioningScheme == byEnvVar
+    #majorVersion: '1' # Required when versioningScheme == byPrereleaseNumber
+    #minorVersion: '0' # Required when versioningScheme == byPrereleaseNumber
+    #patchVersion: '0' # Required when versioningScheme == byPrereleaseNumber
+
+    versioningScheme: 'byPrereleaseNumber'
+    majorVersion: '3'
+    minorVersion: '1'
+    patchVersion: '1'
     
 # - task: DotNetCoreCLI@2
   # inputs:
