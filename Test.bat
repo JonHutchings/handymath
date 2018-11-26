@@ -7,4 +7,7 @@ echo AGENT_BUILDDIRECTORY contents:
 @dir %AGENT_BUILDDIRECTORY%
 echo BUILD_SOURCESDIRECTORY contents:
 @dir %BUILD_SOURCESDIRECTORY%
+
+echo And now for the big cheese...
+@dir %BUILD_SOURCESDIRECTORY% /s
 echo Over and out.
