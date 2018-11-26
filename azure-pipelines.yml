@@ -29,6 +29,13 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+# .NET Core
+# Pack NuGet packages.
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'pack'
+    configuration: 'release'
+    
 # - task: DotNetCoreCLI@2
   # inputs:
     # command: 'push'
