@@ -43,11 +43,20 @@ steps:
     #majorVersion: '1' # Required when versioningScheme == byPrereleaseNumber
     #minorVersion: '0' # Required when versioningScheme == byPrereleaseNumber
     #patchVersion: '0' # Required when versioningScheme == byPrereleaseNumber
-
     versioningScheme: 'byPrereleaseNumber'
     majorVersion: '0'
     minorVersion: '0'
     patchVersion: '4'
+
+# .NET Core
+# Push NuGet packages.
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'push'
+    nuGetFeedType: 'external'
+    packagesToPush: '*.nupkg'
+    publishFeedCredentials: 'NuGet.Org'
+    
     
 # - task: DotNetCoreCLI@2
   # inputs:
