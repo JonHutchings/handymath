@@ -30,20 +30,11 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-# .NET Core
-# Pack NuGet packages.
 - task: DotNetCoreCLI@2
   inputs:
     command: 'pack'
     configuration: 'release'
     packagesToPack: '**/*.csproj'
-    #packDirectory: '$(build.artifactStagingDirectory)' # Optional
-    #nobuild: false # Optional
-    #versioningScheme: 'off' # Options: off, byPrereleaseNumber, byEnvVar, byBuildNumber
-    #versionEnvVar: # Required when versioningScheme == byEnvVar
-    #majorVersion: '1' # Required when versioningScheme == byPrereleaseNumber
-    #minorVersion: '0' # Required when versioningScheme == byPrereleaseNumber
-    #patchVersion: '0' # Required when versioningScheme == byPrereleaseNumber
     versioningScheme: 'byPrereleaseNumber'
     majorVersion: '0'
     minorVersion: '0'
@@ -53,24 +44,6 @@ steps:
   inputs:
     filename: 'test.bat'
 
-# # .NET Core
-# # Push NuGet packages.
-# - task: DotNetCoreCLI@2
-  # inputs:
-    # command: 'push'
-    # nuGetFeedType: 'external'
-    # packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
-    # publishFeedCredentials: 'NuGet.Org'
-    
-    
-# - task: DotNetCoreCLI@2
-  # inputs:
-    # command: 'push'
-    # nuGetFeedType: external
-    # packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
-    # publishFeedCredentials: NuGet.org
-
-    
 - task: NuGetCommand@2
   inputs:
     command: push
