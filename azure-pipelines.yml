@@ -53,19 +53,26 @@ steps:
   inputs:
     filename: 'test.bat'
 
-# .NET Core
-# Push NuGet packages.
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'push'
-    nuGetFeedType: 'external'
-    packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
-    publishFeedCredentials: 'NuGet.Org'
+# # .NET Core
+# # Push NuGet packages.
+# - task: DotNetCoreCLI@2
+  # inputs:
+    # command: 'push'
+    # nuGetFeedType: 'external'
+    # packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
+    # publishFeedCredentials: 'NuGet.Org'
     
     
 # - task: DotNetCoreCLI@2
   # inputs:
     # command: 'push'
     # nuGetFeedType: external
-    # packagesToPush: '$(build.artifactStagingDirectory)/*.nupkg'
+    # packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
     # publishFeedCredentials: NuGet.org
+
+    
+- task: NuGetCommand@2
+  inputs:
+    command: push
+    nuGetFeedType: external
+    publishFeedCredentials: 'NuGet.org'
